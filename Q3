@@ -1,0 +1,26 @@
+ai) SELECT 
+    Department.Code, 
+    COUNT(Employee.ID) AS TotalEmployees
+FROM 
+    Employee
+INNER JOIN 
+    Department ON Employee.DepartmentID = Department.ID
+GROUP BY 
+    Department.Code;
+
+aii) SELECT 
+    Employee.Code, 
+    Employee.Name, 
+    Employee.Salary, 
+    Department.Code AS DepartmentCode
+FROM 
+    Employee
+INNER JOIN 
+    Department ON Employee.DepartmentID = Department.ID
+WHERE 
+    Employee.Salary BETWEEN 3000 AND 4000
+ORDER BY 
+    Department.Code, 
+    Employee.Name;
+
+b)
