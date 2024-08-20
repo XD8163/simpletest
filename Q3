@@ -23,4 +23,32 @@ ORDER BY
     Department.Code, 
     Employee.Name;
 
-b)
+b) Students
+
+i)StudentID (Primary Key)
+FirstName
+LastName
+Gender
+Email
+Phone
+Subjects
+
+ii)SubjectID (Primary Key)
+SubjectName 
+Semesters
+
+iii)SemesterID (Primary Key)
+Year
+SemesterNumber 
+Classes
+
+iv)ClassID (Primary Key)
+SubjectID 
+SemesterID 
+ClassName 
+Enrollments
+
+v)EnrollmentID (Primary Key)
+StudentID 
+ClassID 
+DateEnrolled
